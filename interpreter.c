@@ -67,7 +67,6 @@ int jump(stack_t **stack, char *inst, char *elem, size_t c)
 		{"mul", mul},
 		{"sub", sub},
 		{"mod", mod},
-		/*{div, div},*/
 		{NULL, NULL}
 	};
 
