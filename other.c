@@ -65,16 +65,6 @@ stack_t *new_node(int num)
  * clean - Cleans Memory of the stack
  * @stack: Reference stack
  */
-void clean(stack_t **stack)
+void clean(stack_t __attribute__((unused))**stack)
 {
-	/*file_line fpath;*/
-	stack_t *current = *stack;
-
-	for (; current; current = *stack)
-	{
-		*stack = (*stack)->next;
-		free(current);
-	}
-	fclose(fpath.path);
-	free(fpath.line);
 }

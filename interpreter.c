@@ -12,8 +12,8 @@ void token_it(char *path)
 	size_t buffer = 0, inc = 0;
 	char *instruction = NULL, *element = NULL;
 	stack_t *stack = NULL;
-	fpath.path = fopen(path, "r");
 
+	fpath.path = fopen(path, "r");
 	if (fpath.path)
 	{
 		while (getline(&fpath.line, &buffer, fpath.path) != -1)

@@ -10,10 +10,17 @@ void print_all(stack_t **stack, unsigned int n)
 	(void)n;
 	now = *stack;
 
-	while (now)
+	if (now->next)
+	{
+		while (now)
+		{
+			dprintf(STDERR_FILENO, "%d\n", now->n);
+			now = now->next;
+		}
+	}
+	else
 	{
 		dprintf(STDERR_FILENO, "%d\n", now->n);
-		now = now->next;
 	}
 }
 /**
