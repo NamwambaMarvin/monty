@@ -63,6 +63,11 @@ int jump(stack_t **stack, char *inst, char *elem, size_t c)
 		{"pint", print_int},
 		{"swap", swap_elem},
 		{"nop", do_none},
+		{"add", add},
+		{"mul", mul},
+		{"sub", sub},
+		{"mod", mod},
+		/*{div, div},*/
 		{NULL, NULL}
 	};
 
